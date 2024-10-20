@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj_style.css">
+    <title>Our Projects | Will Geospatial</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="img/logo.jpeg" alt="Will Geospatial Logo" class="logo">
+        <h1>
+            WILL GEOSPATIAL
+        </h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="projects-section">
+        <section class="intro">
+            <h2><br><br>Our Projects</h2>
+            <p>
+                We are proud to have worked on numerous impactful geospatial projects, helping our clients leverage the power of spatial data to make informed decisions. Below is a showcase of some of our most exciting work.
+            </p>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="project-list">
+            <div class="project-card">
+                <img src="projects/building volume.png" alt="Project 1">
+                <h3>Assessment of Spatial Morphology of Contagion index in Port Harcourt Metropolis</h3>
+                <!-- <p>This project involved creating a detailed urban map to help a city optimize public transportation and infrastructure planning using GIS technology.</p> -->
+                <p>This Project involved the Examination of the spatial morphology of the study area from the road network, the pattern of building volume across the study area, also the relationship between spatial morphological indices, population density and building volume across the study area.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="pic/Absorbed dose Rate 2.png" alt="Project 2">
+                <h3> Radiation exposure Analysis </h3>
+                <p>We provided geospatial analysis of public exposure from radiation in six local governments in Edo State
+                    by performing Normalization of datasets and interpolations for Average Dose rate, Average exposure rate, ELCR and AEDE.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="projects/jega map 2018.png" alt="Project 3">
+                <h3>Remote Sensing and land use land cover map classification in Port Harcourt</h3>
+                <p>This project aimed to Analyse and produce Land use land cover map classification (LULC) of study area as well as Normalized difference Vegetation Index (NDVI).</p>
+            </div>
+
+            <!-- <div class="project-card">
+                <img src="img/project4.jpg" alt="Project 4">
+                <h3>Wildlife Conservation Mapping</h3>
+                <p>Our team developed an interactive map that tracks wildlife populations and helps conservationists monitor endangered species across national parks.</p>
+            </div> -->
+            
+        </section>
+    </main>
+
+
+    <!-- <section>
+        <p>
+            Below is a Slideshow of different maps we have made
+        </p>
+    </section> -->
+
+
+    <!-- Slideshow Container -->
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="projects/wsf 3d map.png" alt="Image 1" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="pic/akwa ibom sowing plaes.png" alt="Image 2" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="pic/mr sunday2.png" alt="Image 3" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="pic/jega map.png" alt="Image 4" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="pic/billoo.png" alt="Image 5" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="pic/David hero.png" alt="Image 6" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="pic/Obuama map.png" alt="Image 7" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="projects/population density .png" alt="Image 7" style="width:100%">
+    </div>
+
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+
+    // Remove "active" class from all dots
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+    // Change slide every 5 seconds
+    setTimeout(showSlides, 5000);
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
+}
+</script>
+
+
+      
+    
+
+
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>copyright 2024 - Will Geospatial | All rights reserved</p>
+    </footer>
+
+</body>
+</html>

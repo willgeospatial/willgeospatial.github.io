@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="description" content="Will Geospatial provides cutting-edge geospatial solutions and services.">
+    <meta name="keywords" content="geospatial, GIS, mapping, geospatial analysis">
+    <meta name="author" content="Will Geospatial">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Will Geospatial</title>
+
+</head>
+<body>
+
+    <header>
+        <!-- Note add a logo next to header to create better brand identity  -->
+        <img src="img/logo.jpeg" alt="Will Geospatial Logo" class="logo">
+
+         <h1>
+            WILL GEOSPATIAL
+         </h1> 
+    </header>
+
+    <!-- <header>
+        <h1>
+            WILL GEOSPATIAL
+        </h1>
+    </header>  -->
+    
+
+    <section class="banner"> <br> <br>   
+        <img src="img/banner.jpg" alt=" Will Geospatial welcome banner">
+        <div class="welcome">
+            <h2>
+                Welcome to <br> <span> Will Geospatial </span>
+            </h2>
+        </div>
+    </section>
+
+	
+    <!-- <nav class="main-nav">
+	    <ul>
+        <li><a href="services.html" class="services">Our Services</a></li>
+	        <li><a href="projects.html">Projects</a></li>
+	        <li><a href="about.html">About us</a></li>
+	    </ul>
+	</nav> -->
+
+<button class="hamburger">☰</button> 
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Our Services.html" class="services"> Our Services</a></li>
+            <li><a href="Projects.html"> Projects</a></li>
+            <li><a href="About us.html"> About us</a></li>
+            <li><a href="Contact us.html"> Contact us</a></li>
+        </ul>
+    </nav>
+    
+  
+     <main>
+        <article>
+            <h2>Cutting Edge <br> Geospatial Solutions.</h2>
+
+            <p>Will Geospatial is a leading provider of innovative geospatial solutions designed to empower businesses,
+                governments, and organizations with precise, data-driven insights. Specializing in spatial analysis,
+                mapping, and geographic information system (GIS) development,
+                we help our clients visualize and understand complex geographical data to make informed, 
+                strategic decisions. From urban planning and natural disaster management to precision agriculture and environmental conservation, 
+                we apply cutting-edge geospatial technology to solve real-world problems.
+                At the heart of Will Geospatial, we stand for integrity, innovation, and excellence. 
+                We believe in delivering solutions that not only meet but exceed our clients' expectations through transparency, 
+                ethical practices, and a commitment to quality. 
+                Our team of experts is dedicated to pushing the boundaries of geospatial science, 
+                providing services that are both technologically advanced and customized to the unique needs of each client.
+                Looking ahead, Will Geospatial aims to continue leading the geospatial industry 
+                by integrating emerging technologies like artificial intelligence (AI), machine learning, 
+                and remote sensing into our solutions. Our goal is to revolutionize the way organizations interact with spatial data, 
+                creating smarter cities, sustainable ecosystems, and efficient infrastructures. 
+                By staying ahead of the curve in technological advancements, 
+                we strive to create a future where geospatial data drives better decision-making, 
+                improved resource management, and a deeper understanding of our world.
+            </p>
+
+        </article>
+        <ul class="images">
+            <li> <img src="img/bman.jpg" alt="blackman"></li>
+            <li> <img src="img/aman.jpg" alt="whiteman"></li>
+        </ul>
+     </main>
+
+     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+     <footer>
+        <p>copyright 2024 - Will Geospatial | All right reserved </p>
+     </footer>
+
+
+     <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+    
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    
+</body>
+</html>
